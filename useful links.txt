@@ -1,0 +1,5 @@
+web safe fonts list
+https://blog.hubspot.com/website/web-safe-html-css-fonts
+
+html entities list 
+https://unicode-table.com/en/html-entities/
