@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+</head>
+<body>
+    <h1 align="center">
+        Register Form
+    </h1>
+    <hr>
+    <form action="" method="post">
+        <table align="center" width="60%" border="2">
+            <tr>
+                <td>Enter your name </td>
+                <td>
+                    <input type="text" name="sname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter your surname
+                </td>
+                <td>
+                    <input type="text" name="surname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter your email
+                </td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter your password
+                </td>
+                <td>
+                    <input type="password" name="pswd">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter your address
+                </td>
+                <td>
+                    <textarea name="address" id="" cols="30" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter your birth date
+                </td>
+                <td>
+                    <input type="date" name="bday">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your number</td>
+                <td>
+                    <input type="number" name="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Upload your image
+                </td>
+                <td>
+                    <input type="file" accept="image/*"  name="image">
+                </td>
+            </tr>
+            <tr>
+                <td>Select your gender </td>
+                <td>
+                    <input type="radio" name="gender" >Male
+                    <input type="radio" name="gender" >Female
+                    <input type="radio" name="gender" >Other
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Select your hobbies
+                </td>
+                <td>
+                    <input type="checkbox" name="hobbies">Cricket
+                    <input type="checkbox" name="hobbies">Hockey
+                    <input type="checkbox" name="hobbies">Reading
+                    <input type="checkbox" name="hobbies">Reels
+                </td>
+            </tr>
+            <tr>
+                <td>Select your city</td>
+                <td>
+                    <select name="city" >
+                        <option value="" selected>Select your city</option>
+                        <option value="">Bhavnagar</option>
+                        <option value="">Ahmedabad</option>
+                        <option value="">Surat</option>
+                        <option value="">Anand</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter pincode</td>
+                <td>
+                    <input type="number" name="pincode">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="submit" value="Register">
+                    <input type="reset" name="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
