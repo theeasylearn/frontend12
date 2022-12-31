@@ -11,12 +11,12 @@
         Register Form
     </h1>
     <hr>
-    <form action="" method="post">
+    <form action="success.html" method="post" enctype="multipart/form-data">
         <table align="center" width="60%" border="2">
             <tr>
                 <td>Enter your name </td>
                 <td>
-                    <input type="text" name="sname">
+                    <input type="text" name="sname" required />
                 </td>
             </tr>
             <tr>
@@ -24,7 +24,7 @@
                     Enter your surname
                 </td>
                 <td>
-                    <input type="text" name="surname">
+                    <input type="text" name="surname" required />
                 </td>
             </tr>
             <tr>
@@ -32,7 +32,8 @@
                     Enter your email
                 </td>
                 <td>
-                    <input type="email" name="email">
+                    <input type="email" name="email" required />
+                    <!-- html 5 input type -->
                 </td>
             </tr>
             <tr>
@@ -40,7 +41,7 @@
                     Enter your password
                 </td>
                 <td>
-                    <input type="password" name="pswd">
+                    <input type="password" name="password" required />
                 </td>
             </tr>
             <tr>
@@ -48,7 +49,7 @@
                     Enter your address
                 </td>
                 <td>
-                    <textarea name="address" id="" cols="30" rows="3"></textarea>
+                    <textarea name="address" cols="50" rows="5"></textarea>
                 </td>
             </tr>
             <tr>
@@ -56,29 +57,37 @@
                     Enter your birth date
                 </td>
                 <td>
-                    <input type="date" name="bday">
+                    <input type="date" name="bday" required>
+                    <!-- html 5 input type -->
                 </td>
             </tr>
             <tr>
                 <td>Enter your number</td>
                 <td>
-                    <input type="number" name="number">
+                    <input type="number" name="number" required>
+                     <!-- html 5 input type -->
                 </td>
             </tr>
             <tr>
                 <td>
-                    Upload your image
+                    select your photo
                 </td>
                 <td>
-                    <input type="file" accept="image/*"  name="image">
+                    <input type="file" accept="image/*"  name="photo">
                 </td>
             </tr>
             <tr>
                 <td>Select your gender </td>
                 <td>
-                    <input type="radio" name="gender" >Male
-                    <input type="radio" name="gender" >Female
-                    <input type="radio" name="gender" >Other
+                    <label for="male">
+                        <input id="male" type="radio" name="gender" value="1" checked required />Male
+                    </label>
+                    <label for="female">
+                        <input id="female" type="radio" name="gender" value="0" required />Female
+                    </label>
+                    <label for="other">
+                        <input id="other" type="radio" name="gender" value="2" required />Other
+                    </label>
                 </td>
             </tr>
             <tr>
@@ -86,10 +95,18 @@
                     Select your hobbies
                 </td>
                 <td>
-                    <input type="checkbox" name="hobbies">Cricket
-                    <input type="checkbox" name="hobbies">Hockey
-                    <input type="checkbox" name="hobbies">Reading
-                    <input type="checkbox" name="hobbies">Reels
+                    <label for="">
+                        <input type="checkbox" name="cricket" value="1">Cricket
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="hockey" value="2">Hockey
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="reading" value="4">Reading
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="reels" value="8">Reels
+                    </label>
                 </td>
             </tr>
             <tr>
@@ -97,10 +114,10 @@
                 <td>
                     <select name="city" >
                         <option value="" selected>Select your city</option>
-                        <option value="">Bhavnagar</option>
-                        <option value="">Ahmedabad</option>
-                        <option value="">Surat</option>
-                        <option value="">Anand</option>
+                        <option value="1">Bhavnagar</option>
+                        <option value="2">Ahmedabad</option>
+                        <option value="3">Surat</option>
+                        <option value="4">Anand</option>
                     </select>
                 </td>
             </tr>
