@@ -1,0 +1,37 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+#one
+{
+    color: brown;
+    padding: 10px;
+}
+#two
+{
+    color: chartreuse;
+    padding: 10px;
+}
+#three
+{
+    color:blue;
+    padding: 10px;
+}
+#myheading
+{
+    margin-top: 25px;
+    margin-left: 200px;
+    /* margin-bottom: 10px; */
+}
+.myline
+{
+    margin-top: 10px;
+    margin-bottom:10px ;
+}
+/* .mydiv
+{
+    padding: 100px;
+} */
+
+

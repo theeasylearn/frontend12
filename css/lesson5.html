@@ -4,53 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example of id Selector</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <title>Example of pseudo</title>
     <style>
-        #myheading
+        img
         {
-            color: red;
-            font-size: 30px;
-            font-family: 'Yeon Sung', cursive;
+            margin-top: 40px;
+            margin-left: 40px;
         }
-        .odd
+        img:hover
         {
-            background-color: yellow;
+            border-radius: 50px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
         }
-        .even
+        .mydiv:hover
         {
-            background-color: #5BC0F8;
-        }
-        p
-        {
-            font-family: 'Montserrat', sans-serif;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         }
     </style>
 </head>
 <body>
-    <h1 id="myheading">
-        This is heading 
+    <h1>
+        Example of pseudo
     </h1>
-    <p class="odd">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, soluta? Possimus quasi accusantium, rerum molestiae voluptate ad aut iure inventore pariatur omnis sequi, dicta eligendi qui repellendus quisquam doloremque voluptates.
-    </p>
-    <p class="even">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, accusantium nostrum? Labore, perferendis quis quaerat obcaecati sed iste in asperiores doloremque nemo voluptatibus laborum nesciunt aperiam aliquam similique nulla facere.
-    </p>
-    
-    <p class="odd">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, accusantium nostrum? Labore, perferendis quis quaerat obcaecati sed iste in asperiores doloremque nemo voluptatibus laborum nesciunt aperiam aliquam similique nulla facere.
-    </p>
-    
-    <p class="even">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, accusantium nostrum? Labore, perferendis quis quaerat obcaecati sed iste in asperiores doloremque nemo voluptatibus laborum nesciunt aperiam aliquam similique nulla facere.
-    </p>
-    
-    <p class="odd">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, accusantium nostrum? Labore, perferendis quis quaerat obcaecati sed iste in asperiores doloremque nemo voluptatibus laborum nesciunt aperiam aliquam similique nulla facere.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sequi fugit soluta porro voluptates assumenda expedita voluptatem vel fuga, ut odit sit. Ad sed atque molestiae saepe harum architecto odio?
-    </p>
+    <hr>
+    <img src="https://picsum.photos/350/350" alt="">
+    <div class="mydiv">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis saepe corrupti, fuga consequatur expedita maxime error ducimus possimus, animi quasi ut quisquam recusandae minima quis rem, exercitationem praesentium illum.
+        </p>
+    </div>
 </body>
 </html>
