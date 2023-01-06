@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        div.gallary
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        div.gallary>div 
+        {
+            padding: 5px;
+            background-color: aliceblue;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        div.gallary>div>h3 
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>image gallary with grid</h1> <hr>
+    <div class="gallary">
+        <div>
+            <img src="https://picsum.photos/300" />
+            <h3>Image Description</h3>
+        </div>
+        <div>
+            <img src="https://picsum.photos/301" />
+            <h3>Image Description</h3>
+        </div>
+        <div>
+            <img src="https://picsum.photos/302" />
+            <h3>Image Description</h3>
+        </div>
+        <div>
+            <img src="https://picsum.photos/303" />
+            <h3>Image Description</h3>
+        </div>
+        <div>
+            <img src="https://picsum.photos/301" />
+            <h3>Image Description</h3>
+        </div>
+        <div>
+            <img src="https://picsum.photos/302" />
+            <h3>Image Description</h3>
+        </div>
+        <div>
+            <img src="https://picsum.photos/300" />
+            <h3>Image Description</h3>
+        </div>
+        <div>
+            <img src="https://picsum.photos/302" />
+            <h3>Image Description</h3>
+        </div>
+        <div>
+            <img src="https://picsum.photos/302" />
+            <h3>Image Description</h3>
+        </div>
+    </div>
+</body>
+</html>

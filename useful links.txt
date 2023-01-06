@@ -3,3 +3,9 @@ https://blog.hubspot.com/website/web-safe-html-css-fonts
 
 html entities list 
 https://unicode-table.com/en/html-entities/
+
+for fonts 
+https://fonts.google.com/
+
+for shadows 
+https://getcssscan.com/css-box-shadow-examples
