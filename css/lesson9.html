@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+        ul#links 
+        {
+            display: flex;
+            justify-content: end;
+            list-style-type: none;
+            background-color:beige;
+            padding:10px;
+        }
+        ul#links>li>a:link 
+        {
+            font-family: 'Rowdies', cursive;
+            text-transform: uppercase;
+            color:brown;
+            text-decoration: none;
+            letter-spacing: 1px;
+            padding:10px;
+        }
+        ul#links>li>a:visited
+        {
+            color:black;
+        }
+        ul#links>li>a:hover
+        {
+            background-color: brown;
+            color:white;
+            border-top:2px solid yellow;
+            border-bottom:2px solid yellow;
+        }
+        ul#links>li>a:active
+        {
+            background-color: yellow;
+            color:red;
+        }
+        #advertisement
+        {
+            display: flex;
+            gap:5px;
+        }
+        #advertisement>div 
+        {
+            width: 33%;
+            background-color: aliceblue;
+            height: 100px;
+        }
+        #advertisement>div:hover 
+        {
+            background-color: blue;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            border:5px double yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>example of psuedo classes</h1>
+    <hr>
+    <ul id="links">
+        <li><a href="lesson1.html">Sample Link</a></li>
+        <li><a href="lesson2.html">Sample Link</a></li>
+        <li><a href="lesson3.html">Sample Link</a></li>
+        <li><a href="lesson4.html">Sample Link</a></li>
+        <li><a href="lesson5.html">Sample Link</a></li>
+    </ul>
+    <div id="advertisement">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
