@@ -9,3 +9,9 @@ https://fonts.google.com/
 
 for shadows 
 https://getcssscan.com/css-box-shadow-examples
+
+for icons 
+https://www.iconfinder.com/
+
+gist 
+https://gist.github.com/theeasylearn
