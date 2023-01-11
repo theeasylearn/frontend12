@@ -3,11 +3,13 @@
     padding: 0px;
     letter-spacing: 1px;
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 #header {
     min-height: 100px;
     border: 1px solid black;
+    background-color: beige;
 }
 
 #header>img {
@@ -26,18 +28,80 @@
 }
 
 #footer {
-    min-height: 100px;
     border: 1px solid black;
+    padding-top:25px;
+    padding-bottom:25px;
+    background-color: beige;
 }
-
-/* ##Device = Desktops ##Screen = 1281px to higher resolution desktop */
-@media (min-width: 1281px) {
-    /* code in this block will be applied only if device width>1281 */
+#news 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
-
-/* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
-@media (min-width: 1025px) and (max-width: 1280px) {
-    /* code in this block will be applied only if device width>1025 and <1280 */
+.news-box 
+{
+    min-height: 200px;
+    border:1px solid black;
+    background-color: bisque;
+}
+@media (min-width: 1025px)
+{
+    /* code in this block will be applied only if device width>1025 */
+    #header
+    {
+        display: flex;
+        justify-content: space-between;  /* horizontal alignment of item */
+    }
+    #header>ul 
+    {
+        display: flex;
+        list-style-type: none;
+        gap: 10px;
+        margin-right: 10px;
+        align-items: center; /* vertical alignment of item */
+    }
+    #header>ul>li>a:link 
+    {
+        text-decoration: none;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    #content 
+    {
+        display: flex;
+    }
+    #sidebar
+    {
+        width:15%;
+        background-color: antiquewhite;
+    }
+    #news 
+    {
+        width:70%;
+    }
+    .news-box
+    {
+        width:calc(25% - 30px)
+    }
+    #advertisements
+    {
+        width:15%;
+        background-color: antiquewhite;
+    }
+    #footer>ul
+    {
+        display: flex;
+        list-style-type: none;
+        gap:20px;
+        justify-content: center;
+        
+    }
+    #footer>ul>li>a:link 
+    {
+        text-decoration: none;   
+    }
 }
 
 /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
