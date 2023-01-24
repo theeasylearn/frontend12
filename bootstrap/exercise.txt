@@ -1,0 +1,8 @@
+1) Display Product Name, Photo, Price, Description of 8 Product using Bootstrap column related classes
+    use container,row, col series, card etc 
+
+
+2) Display Movie Name, Photo, Description of 8 Movie using Bootstrap column related classes
+    use container,row, col series, horizontal card etc 
+
+3) Display Student Name, 5 subject marks, total, average etc using bootstrap table related classes 
