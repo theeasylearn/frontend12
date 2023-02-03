@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>working with variables in javascript.....</h1> <hr>
+    <h2>with use strict</h2>
+    <script>
+        "use strict"; //it wont create new variable without use of let and var keyword
+        //create variables 
+        var ClassName = "The easylearn academy";
+        let CurrentYear = 2023;
+        var isLeapYear = false;
+        let pi = 3.14;
+
+        alert(ClassName);
+        alert("Current Year = " + CurrentYear);
+        alert('is this leap year' + isLeapYear);
+        alert(`Pi = ${pi}`)
+        CurrentYear = 'two thousand twenty three';
+        alert(`Current Year = ${CurrentYear}`);
+        currentYear = 2024; //will be error 
+        alert(`Current Year = ${currentYear}`);
+    </script>
+</body>
+</html>
