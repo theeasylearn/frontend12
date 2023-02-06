@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Example of handling click event with button and get/set text</h1>
+    <table border="2"  width="75%" align="center" cellpadding="10">
+        <tr>
+            <td align="center">
+                <input type="button" onclick="AddContent();" value="Add Content into webpage" />
+            </td>
+            <td align="center">
+                <input type="button" onclick="GetContent();" value="Get Content" />
+            </td>
+            <td align="center">
+                <input type="button" onclick="SetContent();" value="Set Content" />
+            </td>
+        </tr>
+        <tr>
+            <td id="output" colspan="3" align="center">
+                <h2>The easylearn academy</h2>
+            </td>
+        </tr>
+    </table>
+<script>
+    //user defined function 
+    function SetContent()
+    {
+        document.getElementById("output").innerHTML = "we are learning <b>javascript</b>";
+    }
+    function GetContent()
+    {
+        var content = document.getElementById("output").innerHTML;
+        alert(content);
+    }
+    function AddContent()
+    {
+       document.write("Attention, we have added new content into the end of the web page");
+    }
+</script>
+</body>
+</html>
