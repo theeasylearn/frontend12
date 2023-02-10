@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <table border="2" align="center" cellpadding="10" width="50%">
+            <tr>
+                <td colspan="2" align="center">
+                    <h3>Maths calculator</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter first number</td>
+                <td>
+                    <input type="text" name="first" id="first">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter second number</td>
+                <td>
+                    <input type="text" name="second" id="second">
+                </td>
+            </tr>
+            <tr>
+                <td>select operation</td>
+                <td>
+                    <label for="addition">
+                        <input id="addition" type="radio" name="operation" value="1"> Addition
+                    </label>
+                    <label for="multiplication">
+                        <input id="multiplication" type="radio" name="operation" value="3"> multiplication
+                    </label>
+                    <label for="substraction">
+                        <input id="substraction" type="radio" name="operation" value="2"> substraction
+                    </label>
+                    <label for="division">
+                        <input id="division" type="radio" name="operation" value="4"> Division
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Calculate result" onclick="CalculateResult();">
+                    <input type="reset" value="Clear all">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" id="result">
+                    result will be displayed here
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        var first, second, operation, result;
+        first = document.getElementById("first");
+        second = document.getElementById("second");
+        result = document.getElementById("result");
+        //user defined function
+        function CalculateResult() {
+            operation = document.querySelector("input[name='operation']:checked"); //return reference of the radio button which is checked
+            var answer; //local variable
+            //input validation 
+            
+            if (first.value == '') {
+                alert('please give first number');
+                first.focus();
+            }
+            else if (second.value == '') {
+                alert('please give second number');
+                second.focus();
+            }
+            else if(operation == null)
+            {
+                alert('please selection operation');
+            }
+            else {
+                if (operation.value == '1') {
+                    answer = parseInt(first.value) + parseInt(second.value);
+                }
+                else if (operation.value == '2') {
+                    answer = parseInt(first.value) - parseInt(second.value);
+                }
+                else if (operation.value == '3') {
+                    answer = parseInt(first.value) * parseInt(second.value);
+                }
+                else if (operation.value == '4') {
+                    answer = (parseInt(first.value) / parseInt(second.value)).toFixed(2);
+                }
+                result.innerHTML = `result is ${answer}`;
+            }
+        }
+    </script>
+</body>
+
+</html>
