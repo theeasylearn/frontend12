@@ -1,0 +1,3 @@
+1) Develope basic interest calculator as per example maths calculator.
+2) Develope EMI calculator as per example maths calculator.
+    https://emicalculator.net/

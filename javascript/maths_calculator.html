@@ -64,6 +64,10 @@
         second = document.getElementById("second");
         result = document.getElementById("result");
         //user defined function
+        function isNumber(str)
+        {
+            return !/\D/.test(str);
+        }
         function CalculateResult() {
             operation = document.querySelector("input[name='operation']:checked"); //return reference of the radio button which is checked
             var answer; //local variable
@@ -80,6 +84,16 @@
             else if(operation == null)
             {
                 alert('please selection operation');
+            }
+            else if(isNumber(first.value)==false)
+            {
+                alert('please give valid first number');
+                first.focus();
+            }
+            else if(isNumber(second.value)==false)
+            {
+                alert('please give valid second number');
+                second.focus();
             }
             else {
                 if (operation.value == '1') {
