@@ -1,0 +1,68 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+    font-size: 20px;
+}
+#resume
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+#personal
+{
+    width:calc(25% - 40px);
+    background-color: blueviolet;
+    color:white;
+    padding-left: 40px;
+}
+#personal>h3 
+{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    border-bottom: 2px solid white;
+}
+#personal>ul 
+{
+    list-style-type: none;
+}
+#personal>ul>li 
+{
+    line-height: 150%;
+}
+#professional
+{
+    width:calc(75% - 40px);
+    padding-left: 40px;
+}
+#language>li>span
+{
+    display: block;
+}
+#skill>li>div 
+{
+    display: inline-block;
+    height:10px;
+    width:200px;
+    background-color: gainsboro;
+}
+#skill>li>div>span 
+{
+    display: block;
+    height:10px;
+    width: 150px;
+    background-color: yellow;
+} 
+#photo 
+{
+    display: block;
+    margin-left:40px;
+    margin-top: 40px;
+    border:4px solid white;
+    border-radius: 150px;
+}
