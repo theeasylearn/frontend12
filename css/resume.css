@@ -66,3 +66,53 @@
     border:4px solid white;
     border-radius: 150px;
 }
+#banner
+{
+    width:70%;
+    margin:auto;/* put div tag itself in center of it's parent */
+    margin-top:50px;
+    background-color: gainsboro;
+    padding-top:40px;
+    padding-bottom:40px;
+    text-align: center; /* put content of the div tag in center in context of div tag itself */
+}
+#name 
+{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#line 
+{
+    margin: auto;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+#designation
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#professional>h3 
+{
+    color:blueviolet;
+    text-transform: uppercase;
+    margin:20px 0px;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    border-bottom: 1px solid blueviolet;
+    display: inline-block;
+}
+.info 
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.heading 
+{
+    font-weight: bold;
+}
+.duration
+{
+    color:blueviolet;
+}
