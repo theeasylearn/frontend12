@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="success.html" method="post"  onsubmit="return GenerateTable();" >
+        <table align="center" border="2" cellpadding="10" width="70%">
+            <tr>
+                <td colspan="3" align="center">
+                    <h3>HTML table generator</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter row</td>
+                <td>
+                    <input type="text" name="tablerow" id="tablerow">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Enter Column</td>
+                <td>
+                    <input type="text" name="tablecolumn" id="tablecolumn">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Select loop</td>
+                <td>
+                    <select id="loop">
+                        <option value="1">While loop</option>
+                        <option value="2">For loop</option>
+                        <option value="3">Do while loop</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <input type="submit" value="Generate HTML table">
+                </td>
+            </tr>
+        </table>
+
+        <div id="mydiv"><h3>here we will display table</h3></div>
+    </form>
+    <script>
+        //variables declaration 
+        var tablerow = document.getElementById("tablerow");
+        var tablecolumn = document.getElementById("tablecolumn");
+        var loop = document.getElementById("loop");
+        var mydiv = document.getElementById("mydiv");
+        //user defined function 
+        //let function-name = function()
+        let GenerateTable = function()
+        {
+            if(loop.value==1)
+            {
+                //while loop 
+            }
+            if(loop.value==2)
+            {
+                //for loop 
+            }
+            if(loop.value==3)
+            {
+                //do while loop 
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
