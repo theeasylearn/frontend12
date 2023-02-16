@@ -54,13 +54,30 @@
         var tablecolumn = document.getElementById("tablecolumn");
         var loop = document.getElementById("loop");
         var mydiv = document.getElementById("mydiv");
-        //user defined function 
+        var output = '';
+        //user defined function
         //let function-name = function()
         let GenerateTable = function()
         {
             if(loop.value==1)
             {
-                //while loop 
+                
+                output = "<table border='1' align='center' cellpadding='10' width='70%'>";
+                var row = 1;
+                while(row<=parseInt(tablerow.value))
+                {
+                    output += "<tr>";
+                    var column=1;
+                    while(column<=parseInt(tablecolumn.value))
+                    {
+                        output += "<td>The easylearn academy</td>";
+                        column=column+1; //4
+                    }
+                    output += "</tr>";
+                    row=row+1;
+                }
+                output += "</table>";
+                // alert(output);
             }
             if(loop.value==2)
             {
@@ -70,6 +87,7 @@
             {
                 //do while loop 
             }
+            mydiv.innerHTML = output;
             return false;
         }
     </script>
