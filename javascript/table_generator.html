@@ -5,6 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .no-error 
+        {
+            font-size: 0px;
+            background-color: white;
+            border:1px solid black;
+        }
+        .error 
+        {
+            font-size: 16px;
+            background-color:bisque;
+            border:1px solid red;
+            color:red;
+        }
+    </style>
 </head>
 <body>
     <form action="success.html" method="post"  onsubmit="return GenerateTable();" >
@@ -15,18 +30,18 @@
                 </td>
             </tr>
             <tr>
-                <td>Enter row</td>
-                <td>
-                    <input type="text" name="tablerow" id="tablerow">
+                <td width="20%">Enter row</td>
+                <td width="30%">
+                    <input type="text" name="tablerow" id="tablerow" onblur="Validate(this.id);">
                 </td>
-                <td></td>
+                <td width="50%" id="td-tablerow" class="no-error">row can not be empty</td>
             </tr>
             <tr>
                 <td>Enter Column</td>
                 <td>
-                    <input type="text" name="tablecolumn" id="tablecolumn">
+                    <input type="text" name="tablecolumn" id="tablecolumn" onblur="Validate(this.id);">
                 </td>
-                <td></td>
+                <td id="td-tablecolumn" class="no-error">column can not be empty</td>
             </tr>
             <tr>
                 <td>Select loop</td>
@@ -56,7 +71,31 @@
         var mydiv = document.getElementById("mydiv");
         var output = '';
         //user defined function
+        let isNumber = function(str)
+        {
+            return !/\D/.test(str);
+        }
         //let function-name = function()
+        let Validate = function(TagId){
+            var TdId = "td-" + TagId;
+            console.log('onblue event triggered for ' + TagId + " and its td id " + TdId);
+            if(document.getElementById(TagId).value=="")
+            {
+                document.getElementById(TdId).className = "error";
+                document.getElementById(TdId).innerHTML = "value required";
+            }
+            else if(isNumber(document.getElementById(TagId).value)==false)
+            {
+                document.getElementById(TdId).className = "error";
+                document.getElementById(TdId).innerHTML = "value must be only digits";
+            }
+            else 
+            {
+                document.getElementById(TdId).className = "no-error";
+            }
+
+        }
+
         let GenerateTable = function()
         {
             if(loop.value==1)
